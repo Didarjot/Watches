@@ -3,16 +3,134 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ChronoClassics Watches</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
-    header { background: #000; color: white; padding: 20px; text-align: center; }
-    nav { background: #333; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; }
-    .page { display: none; padding: 20px; }
-    .active { display: block; }
-    .product { background: white; padding: 15px; margin: 10px; border-radius: 5px; }
-    footer { background: #000; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
-    img { width: 100%; max-width: 300px; height: auto; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f2f2f2;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+    nav {
+      background: #1c1c1c;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f0c330;
+    }
+    .page {
+      display: none;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .active {
+      display: block;
+    }
+    .product {
+      background: #fff;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .product img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 4px;
+    }
+    .product-details {
+      flex: 1;
+    }
+    .product h3 {
+      margin-bottom: 10px;
+    }
+    .buy-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #111;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .buy-button:hover {
+      background-color: #444;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 60px;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+    form button {
+      background: #111;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background: #333;
+    }
+    h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+    img.logo {
+      max-width: 300px;
+      display: block;
+      margin: 20px auto;
+    }
   </style>
 </head>
 <body>
@@ -21,65 +139,86 @@
     <p>Timeless Elegance & Sporty Performance</p>
   </header>  <nav>
     <a href="#" onclick="showPage('home')">Home</a>
-    <a href="#" onclick="showPage('formal')">Formal Watches</a>
-    <a href="#" onclick="showPage('sporty')">Sporty Watches</a>
+    <a href="#" onclick="showPage('formal')">Formal</a>
+    <a href="#" onclick="showPage('sporty')">Sporty</a>
     <a href="#" onclick="showPage('contact')">Contact</a>
     <a href="#" onclick="showPage('feedback')">Feedback</a>
   </nav>  <div id="home" class="page active">
     <h2>Welcome to ChronoClassics</h2>
-    <p>Discover our exclusive range of formal and sporty watches crafted with precision and style.</p>
-    <img src="https://via.placeholder.com/300x200?text=ChronoClassics+Logo" alt="ChronoClassics Logo">
+    <p>Where craftsmanship meets innovation. Explore a wide range of premium watches for every lifestyle.</p>
+    <img class="logo" src="https://via.placeholder.com/300x200?text=ChronoClassics+Logo" alt="ChronoClassics Logo">
   </div>  <div id="formal" class="page">
-    <h2>Formal Watches Collection</h2>
+    <h2>Formal Watches</h2>
     <div class="product">
-      <h3>Regal Black</h3>
-      <img src="https://via.placeholder.com/300x200?text=Regal+Black" alt="Regal Black">
-      <p>Elegant black dial with leather strap. ₹15,000</p>
+      <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg" alt="Regal Black">
+      <div class="product-details">
+        <h3>Regal Black</h3>
+        <p>Elegant black dial with leather strap. Perfect for executive style. ₹15,000</p>
+        <a href="#" class="buy-button">Buy Now</a>
+      </div>
     </div>
     <div class="product">
-      <h3>Classic Silver</h3>
-      <img src="https://via.placeholder.com/300x200?text=Classic+Silver" alt="Classic Silver">
-      <p>Minimalist silver-tone timepiece. ₹13,500</p>
+      <img src="https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg" alt="Classic Silver">
+      <div class="product-details">
+        <h3>Classic Silver</h3>
+        <p>Minimalist silver-tone timepiece with timeless appeal. ₹13,500</p>
+        <a href="#" class="buy-button">Buy Now</a>
+      </div>
     </div>
     <div class="product">
-      <h3>Executive Gold</h3>
-      <img src="https://via.placeholder.com/300x200?text=Executive+Gold" alt="Executive Gold">
-      <p>Gold-plated finish with premium detailing. ₹22,000</p>
+      <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg" alt="Executive Gold">
+      <div class="product-details">
+        <h3>Executive Gold</h3>
+        <p>Premium gold-plated design for formal occasions. ₹22,000</p>
+        <a href="#" class="buy-button">Buy Now</a>
+      </div>
     </div>
   </div>  <div id="sporty" class="page">
-    <h2>Sporty Watches Collection</h2>
+    <h2>Sporty Watches</h2>
     <div class="product">
-      <h3>Trailblazer X</h3>
-      <img src="https://via.placeholder.com/300x200?text=Trailblazer+X" alt="Trailblazer X">
-      <p>Durable, waterproof with shock resistance. ₹9,999</p>
+      <img src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg" alt="Trailblazer X">
+      <div class="product-details">
+        <h3>Trailblazer X</h3>
+        <p>Durable, waterproof, and made for adventure. ₹9,999</p>
+        <a href="#" class="buy-button">Buy Now</a>
+      </div>
     </div>
     <div class="product">
-      <h3>Speed Runner</h3>
-      <img src="https://via.placeholder.com/300x200?text=Speed+Runner" alt="Speed Runner">
-      <p>Chronograph with digital features. ₹11,500</p>
+      <img src="https://images.pexels.com/photos/277319/pexels-photo-277319.jpeg" alt="Speed Runner">
+      <div class="product-details">
+        <h3>Speed Runner</h3>
+        <p>Digital-analog hybrid with chronograph features. ₹11,500</p>
+        <a href="#" class="buy-button">Buy Now</a>
+      </div>
     </div>
     <div class="product">
-      <h3>Adventura Pro</h3>
-      <img src="https://via.placeholder.com/300x200?text=Adventura+Pro" alt="Adventura Pro">
-      <p>GPS enabled with rugged build. ₹13,800</p>
+      <img src="https://images.pexels.com/photos/325153/pexels-photo-325153.jpeg" alt="Adventura Pro">
+      <div class="product-details">
+        <h3>Adventura Pro</h3>
+        <p>Built-in GPS, shockproof, and rugged. ₹13,800</p>
+        <a href="#" class="buy-button">Buy Now</a>
+      </div>
     </div>
   </div>  <div id="contact" class="page">
     <h2>Contact Us</h2>
-    <p>Email: support@chronoclassics.com</p>
-    <p>Phone 1: +91-9876543210</p>
-    <p>Phone 2: +91-8765432198</p>
-    <p>Address: 5th Floor, Watch Tower Plaza, Delhi, India</p>
+    <p>Email: <strong>support@chronoclassics.com</strong></p>
+    <p>Phone 1: <strong>+91-9876543210</strong></p>
+    <p>Phone 2: <strong>+91-8765432198</strong></p>
+    <p>Address: <strong>5th Floor, Watch Tower Plaza, Delhi, India</strong></p>
+    <p>Instagram: <strong>@ChronoClassics</strong></p>
   </div>  <div id="feedback" class="page">
     <h2>Leave Feedback</h2>
     <form>
-      <label for="name">Your Name:</label><br>
-      <input type="text" id="name" name="name" /><br><br>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" /><br><br>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
-      <button type="submit">Submit</button>
-    </form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required /><label for="email">Email:</label>
+  <input type="email" id="email" name="email" required />
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
   </div>  <footer>
     &copy; 2025 ChronoClassics. All rights reserved.
   </footer>  <script>
