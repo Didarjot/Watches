@@ -127,7 +127,7 @@
       padding-bottom: 10px;
     }
     img.logo {
-      max-width: 300px;
+      max-width: 280px;
       display: block;
       margin: 20px auto;
     }
@@ -146,11 +146,11 @@
   </nav>  <div id="home" class="page active">
     <h2>Welcome to ChronoClassics</h2>
     <p>Where craftsmanship meets innovation. Explore a wide range of premium watches for every lifestyle.</p>
-    <img class="logo" src="https://via.placeholder.com/300x200?text=ChronoClassics+Logo" alt="ChronoClassics Logo">
+    <img class="logo" src="https://images.unsplash.com/photo-1617048669648-0b3c0f9e54fb?auto=format&fit=crop&w=512&q=80" alt="ChronoClassics Logo">
   </div>  <div id="formal" class="page">
     <h2>Formal Watches</h2>
     <div class="product">
-      <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg" alt="Regal Black">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=400&q=80" alt="Regal Black">
       <div class="product-details">
         <h3>Regal Black</h3>
         <p>Elegant black dial with leather strap. Perfect for executive style. ₹15,000</p>
@@ -158,7 +158,7 @@
       </div>
     </div>
     <div class="product">
-      <img src="https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg" alt="Classic Silver">
+      <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=400&q=80" alt="Classic Silver">
       <div class="product-details">
         <h3>Classic Silver</h3>
         <p>Minimalist silver-tone timepiece with timeless appeal. ₹13,500</p>
@@ -166,7 +166,7 @@
       </div>
     </div>
     <div class="product">
-      <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg" alt="Executive Gold">
+      <img src="https://images.unsplash.com/photo-1585386959984-a4155223f7e1?auto=format&fit=crop&w=400&q=80" alt="Executive Gold">
       <div class="product-details">
         <h3>Executive Gold</h3>
         <p>Premium gold-plated design for formal occasions. ₹22,000</p>
@@ -176,7 +176,7 @@
   </div>  <div id="sporty" class="page">
     <h2>Sporty Watches</h2>
     <div class="product">
-      <img src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg" alt="Trailblazer X">
+      <img src="https://images.unsplash.com/photo-1622675363311-59b14ff5507e?auto=format&fit=crop&w=400&q=80" alt="Trailblazer X">
       <div class="product-details">
         <h3>Trailblazer X</h3>
         <p>Durable, waterproof, and made for adventure. ₹9,999</p>
@@ -184,7 +184,7 @@
       </div>
     </div>
     <div class="product">
-      <img src="https://images.pexels.com/photos/277319/pexels-photo-277319.jpeg" alt="Speed Runner">
+      <img src="https://images.unsplash.com/photo-1585776245991-8ec20903f65a?auto=format&fit=crop&w=400&q=80" alt="Speed Runner">
       <div class="product-details">
         <h3>Speed Runner</h3>
         <p>Digital-analog hybrid with chronograph features. ₹11,500</p>
@@ -192,7 +192,7 @@
       </div>
     </div>
     <div class="product">
-      <img src="https://images.pexels.com/photos/325153/pexels-photo-325153.jpeg" alt="Adventura Pro">
+      <img src="https://images.unsplash.com/photo-1599940824395-322c6b021f46?auto=format&fit=crop&w=400&q=80" alt="Adventura Pro">
       <div class="product-details">
         <h3>Adventura Pro</h3>
         <p>Built-in GPS, shockproof, and rugged. ₹13,800</p>
